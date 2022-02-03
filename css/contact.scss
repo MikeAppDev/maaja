@@ -130,3 +130,34 @@ fieldset {
         max-width:300px;
         }
 }
+
+@media only screen and (min-width: 910px) {
+    .contactForm{
+        width: 900px;
+    }
+    .formu{
+        display: flex;
+        flex-direction: column;
+
+        &__block{
+            display: flex;
+            
+        }
+        &__50{
+            width: 50%;
+        }
+    }
+    .contentPosition{
+
+        &__pad{
+            padding-left: 120px;
+            padding-bottom: 10px;
+        }
+        &__center{
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+
+    }
+}

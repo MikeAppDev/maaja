@@ -587,6 +587,31 @@ fieldset {
     max-width: 300px;
   }
 }
+@media only screen and (min-width: 910px) {
+  .contactForm {
+    width: 900px;
+  }
+
+  .formu {
+    display: flex;
+    flex-direction: column;
+  }
+  .formu__block {
+    display: flex;
+  }
+  .formu__50 {
+    width: 50%;
+  }
+
+  .contentPosition__pad {
+    padding-left: 120px;
+    padding-bottom: 10px;
+  }
+  .contentPosition__center {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
 .footer {
   display: flex;
   flex-flow: row wrap;
