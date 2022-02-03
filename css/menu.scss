@@ -1,0 +1,92 @@
+.menu{
+    // background-color: rgb(201, 184, 161);
+    // border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+    margin-left: 30px;
+    color: black;
+    cursor: pointer;
+}
+.btn-origin{
+	// background-color: rgb(201, 184, 161);
+    // border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    }
+.btn-origin:hover, .btn-origin:visited{
+    background-color: rgb(235, 228, 213);
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.marginB{
+    margin-bottom: 20px;
+}
+.menuGlobal{
+    display: flex;
+    justify-content: center;
+}
+.menuTarif{
+    // background-color: rgb(19, 10, 2);
+    // border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+    margin-left: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.menu:hover{
+    background-color: rgb(235, 228, 213);
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+.menuTarif:hover{
+    background-color: rgb(235, 228, 213);
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.btn-contact-card{
+    // border-bottom: black 1px solid;
+    padding: 5px 5px 5px 5px;
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.color1{
+    background-color: rgb(235, 228, 213);
+}
+
+@media only screen and (max-width: 513px) {
+    .btn-origin, .menu, .menuTarif{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 489px) {
+    .btn-origin, .menu, .menuTarif{
+        padding: 12px 1px 13px 1px;
+        border-bottom: none;
+        margin-left: 5px;
+
+        border-radius: 10px 10px 10px 10px;
+        font-size: small;
+    }
+    .btn-origin:hover, .menu:hover, .menuTarif:hover{
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+@media only screen and (max-width: 266px) {
+
+}

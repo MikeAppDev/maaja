@@ -1,0 +1,82 @@
+.buttonDir{
+    display: flex;
+    justify-content: center;
+	background-color: #fffdf99d;
+	width: 55%;
+	padding-bottom: 12px;
+	padding-top: 10px;
+	border-radius: 10px;
+}
+
+
+.btn{
+//   width: 100px;
+//   height: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+//   border-radius: 30px;
+  cursor: pointer;
+}
+.btnSend{
+	border-radius: 5px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButtonSend {
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+.myButtonSend:hover {
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
+}
+.myButtonSend:active {
+	position:relative;
+	top:1px;
+}
+
+// color fixe
+
+
+@media only screen and (max-width: 900px) {
+	.buttonDir{
+			width: 100%;
+	}
+
+}

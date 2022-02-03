@@ -1,0 +1,44 @@
+  /* PRESTATION */
+  .prestation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    &__titreP{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32%;
+      border-top: solid 1px brown;
+      border-bottom: solid 1px brown;
+      margin-bottom: 40px;
+  }
+}
+.prestationCard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.prix{
+  color: red;
+  font-weight: bold;
+  font-size: x-large;
+}
+.price{
+  font-weight: bold;
+}
+
+.separator{
+  border-bottom: black 3px solid;
+  width: 50%;
+}
+
+.text-content{
+  text-align: justify;
+  padding: 20px;
+  line-height: 1.5em;
+}

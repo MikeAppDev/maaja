@@ -1,0 +1,138 @@
+/* CARDS */
+.containerCard {
+    width: 210px;
+    height: 400px;
+    text-align: center;
+    /* line-height: 300px; */
+    /* font-size: 5em; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 30px;
+  }
+  
+  .card-front {
+    width: 210px;
+    height: 400px;
+    // background: #ffffff;
+    position: absolute;
+    border-radius: 30px;
+    z-index: 3;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 5px rgb(177, 177, 177);
+    cursor: pointer;
+  }
+  .prestaCoaching{
+    background-image: url("assets/front-presta-coaching.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .prestaProjet{
+    background-image: url("assets/front-presta-projet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .prestaAtelier{
+    background-image: url("assets/front-presta-atelier.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .titleCard{
+    font-size: x-large;
+    font-family: 'Montserrat';
+    padding-bottom: 8px;
+    // background-color: blanchedalmond;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .detailTitleCard{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .ita{
+    font-style: italic;
+    font-size: 30px;
+  }
+  .prestaPrix{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+    font-size: 10px;
+    width: 100%;
+  }
+  
+  .card-back {
+    width: 210px;
+    height: 400px;
+    background: #fffdf99d;
+    position: absolute;
+    border-radius: 30px;
+    z-index: 2;
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 5px 5px rgb(177, 177, 177);
+    padding: 10px;
+
+  }
+  
+  .card:hover .card-front {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-back {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 3;
+  }
+  
+  .detailBackCard{
+    text-align: unset;
+    padding-left: 20px;
+    font-size: 8px;
+  }
+  .titleBack{
+    text-align: center;
+  }
+
+  .backTitle{
+    background-color: #ffffffe6;
+    border-radius: 7%;
+    width: 100%;
+  }
+
+  .blanc{
+    color: white;
+  }
