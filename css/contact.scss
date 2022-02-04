@@ -15,6 +15,11 @@
 .contentPosition{
     padding-left: 8px;
     padding-bottom: 10px;
+
+    &__pad{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
 }
 
 .containerContact {
@@ -70,16 +75,16 @@ fieldset {
     width:100%;
     border: none;
     background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
+    margin:0 0 10px;
+    padding: 15px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-    -webkit-transition:border-color 0.3s ease-in-out;
-    -moz-transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
-}
+// #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+//     -webkit-transition:border-color 0.3s ease-in-out;
+//     -moz-transition:border-color 0.3s ease-in-out;
+//     transition:border-color 0.3s ease-in-out;
+//     border:1px solid #AAA;
+// }
 
 #contact textarea {
     height:150px;
@@ -141,7 +146,18 @@ fieldset {
 
         &__block{
             display: flex;
-            
+            flex-direction: column;
+
+            &__espace{
+                padding: 10px;
+            }
+        }
+        &__saisi{
+            width: 200px;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-around;
         }
         &__50{
             width: 50%;
@@ -150,14 +166,16 @@ fieldset {
     .contentPosition{
 
         &__pad{
-            padding-left: 120px;
+            padding-left: 80px;
             padding-bottom: 10px;
         }
         &__center{
             text-align: center;
             padding-top: 10px;
         }
-        
+        &__marbot{
+            margin-bottom: 15px;
+        }
 
     }
 }

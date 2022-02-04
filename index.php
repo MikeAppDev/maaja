@@ -133,7 +133,7 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
 
     <section class="sliders">
         <div class="center bot sliders__titreP">
-            <h2 class="title2">AVANT - APRES</h2>
+            <h2 class="title2">REALISATION</h2>
         </div>
             <div class="buttonDir">
                 <div><a id="btn0" class="btn-origin">Salon</a></div>
@@ -306,15 +306,24 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
         </div>
     </section>
 
-    <section class="center">
-    <div>
-        <div>
-            SUBLIMEZ VOS VITRINES
+    <section class="Pro">
+        <div class="content">
+        <div class="prestation__titreP"><h2 id="presentation" class="title2">PROFESSIONNELS</h2></div>
+            <div class="content__dispo">
+                <div class="content__text">
+                    <p>Sublimer vos boutiques fait aussi parti de mon quotidien. Cette partie de mon travail me permet d'imaginer, créer et fabriquer chaque vitrine pour vous proposer des univers différents et parsonnalisés tout au long de l'année.</p>
+                </div>
+                <div class="content__img">
+                    <div class="content__img__1">
+                        <a href="./assets/maaja-prestation-vitrine-de-commerce-tarn-et-garone.pdf"><img class="content__img__1__detail" src="./assets/Profil_MAAJA.png" alt=""></a>
+                        
+                    </div>
+                    <div class="content__img__1">
+                    <a href="./assets/maaja-prestation-agence-immobiliere-tarn-et-garone.pdf"><img class="content__img__1__detail" src="./assets/Profil_MAAJA.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            HOME STAGING
-        </div>
-    </div>        
     </section>
 
 <!-- contact -->
@@ -322,7 +331,7 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
 
             <div class="contactForm">
                 <div class="">
-                    <h2 class="title2">Contactez-moi</h2>
+                    <h2 class="title2 title2__bottop">Contactez-moi</h2>
                 </div>
                 <?php
                 // if($retour)
@@ -332,59 +341,70 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
                 <?php if(isset($cool)) echo $cool; ?>
                     
                     <form method="post" class="formu"> 
-                        <div class="formu__block">
-                            <!-- Prenom -->
-                            <div class="formu__50">
-                                <!-- <label for="prenom" class="contentPosition">Prénom</label> -->
-                                <input type="text" class="" id="prenom" name="prenom" placeholder="Prénom">
+                        <div class="formu__content">
+                            <div class="formu__block__espace">
+                                <!-- Prenom -->
+                                <div class="formu__saisi">
+                                    <!-- <label for="prenom" class="contentPosition">Prénom</label> -->
+                                    <input type="text" class="" id="prenom" name="prenom" placeholder="Prénom">
+                                </div>
+                                <!-- Nom -->
+                                <div class="formu__saisi">
+                                    <!-- <label for="nom" class="contentPosition">Nom</label> -->
+                                    <input type="text" class="" id="nom" name="nom" placeholder="nom">
+                                </div>
+                                    <!-- Telephone -->
+                                <div class="formu__saisi">
+                                    <!-- <label for="tel" class="contentPosition">Téléphone</label> -->
+                                    <input type="text" class="" id="tel" name="tel" placeholder="tel">
+                                </div>
+                                <!-- Email -->
+                                <div class="formu__saisi">
+                                        <!-- <label for="email" class="contentPosition">email</label> -->
+                                        <input type="email" class=" <?php if(isset($errorEmail)); ?>" id="email" name="email" placeholder="email">
+                                    <?php 
+                                    if(isset($errorEmail)) echo $errorEmail; 
+                                    ?> 
+                                </div>
                             </div>
-                            <!-- Nom -->
-                            <div class="formu__50">
-                                <!-- <label for="nom" class="contentPosition">Nom</label> -->
-                                <input type="text" class="" id="nom" name="nom" placeholder="nom">
+                            <!-- Choice -->
+                            
+                            
+                            <div class="formu__block">
+                            <div>
+                                <h5 class="contentPosition center title2__bottop">
+                                Sélectionnez la / les prestations qui vous interesses : 
+                                </h5>
                             </div>
-                        </div>
-                        <div class="formu__block">
-                                <!-- Telephone -->
-                            <div class="formu__50">
-                                <!-- <label for="tel" class="contentPosition">Téléphone</label> -->
-                                <input type="text" class="" id="tel" name="tel" placeholder="tel">
-                            </div>
-                            <!-- Email -->
-                            <div class="formu__50">
-                                <!-- <label for="email" class="contentPosition">email</label> -->
-                                <input type="email" class=" <?php if(isset($errorEmail)); ?>" id="email" name="email" placeholder="email">
-                            <?php 
-                            if(isset($errorEmail)) echo $errorEmail; 
-                            ?> 
-                            </div>
-                        </div>
-                        <!-- Choice -->
-                        <p class="contentPosition center">Sélectionnez la / les prestations qui vous interesses : </p>
 
-                        <div class="contentPosition__pad">
-                            <input type="checkbox" id="presta_1" name="presta_1" value="Coaching">
-                            <label for="presta_1">Coaching</label>
-                        </div>
-                        <div class="contentPosition__pad">
-                            <input type="checkbox" id="presta_2" name="presta_2" value="Projet">
-                            <label for="presta_2">Projet</label>
-                        </div>
-                        <div class="contentPosition__pad">
-                            <input type="checkbox" id="presta_3" name="presta_3" value="Atelier">
-                            <label for="presta_3">Atelier</label>
-                        </div>
-                        <div class="contentPosition__pad">
-                            <input type="checkbox" id="presta_4" name="presta_4" value="Atelier">
-                            <label for="presta_3">Vitrine</label>
-                        </div>
-                        <div class="contentPosition__pad">
-                            <input type="checkbox" id="presta_5" name="presta_5" value="Atelier">
-                            <label for="presta_3">Home Staging</label>
+                                <div class="contentPosition__pad">
+                                    <input type="checkbox" id="presta_1" name="presta_1" value="Coaching">
+                                    <label for="presta_1">Coaching</label>
+                                </div>
+                                <div class="contentPosition__pad">
+                                    <input type="checkbox" id="presta_2" name="presta_2" value="Projet">
+                                    <label for="presta_2">Projet</label>
+                                </div>
+                                <div class="contentPosition__pad">
+                                    <input type="checkbox" id="presta_3" name="presta_3" value="Atelier">
+                                    <label for="presta_3">Atelier</label>
+                                </div>
+                                <div class="contentPosition__pad">
+                                    <input type="checkbox" id="presta_4" name="presta_4" value="Atelier">
+                                    <label for="presta_3">Vitrine</label>
+                                </div>
+                                <div class="contentPosition__pad">
+                                    <input type="checkbox" id="presta_5" name="presta_5" value="Atelier">
+                                    <label for="presta_3">Home Staging</label>
+                                </div>
+                            </div>
                         </div>
                         <!-- Commentaire demande -->
                         <div class="contentPosition__center">
-                            <label for="commentaire" class="contentPosition"> Demande / Information</label>
+                            <div class="contentPosition__marbot">
+                                <label for="commentaire" class="contentPosition"> Demande / Information</label>
+                            </div>
+                            
                             <textarea class="" id="commentaire" name="commentaire" rows="3" placeholder="Objet de la demande"></textarea>
                         </div>
                         <!-- Bouton -->

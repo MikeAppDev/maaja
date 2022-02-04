@@ -1,0 +1,68 @@
+.Pro{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+
+    &__text{
+        width : 45%;
+        padding: 40px;
+        text-align: justify;
+    }
+    &__dispo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__img{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &__1{
+            width: 200px;
+
+            &__detail{
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .content{
+        &__dispo{
+            justify-content: center;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .content{
+        &__dispo{
+            flex-direction: column;
+        }
+        &__text{
+            width : 80%;
+            padding: 40px;
+        }
+        &__img{
+            flex-wrap: nowrap;
+        }
+    }
+}
+@media only screen and (max-width: 430px) {
+    .content{
+        &__img{
+            flex-wrap: wrap;
+        }
+    }
+}
