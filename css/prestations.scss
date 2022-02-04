@@ -35,10 +35,23 @@
 .separator{
   border-bottom: black 3px solid;
   width: 50%;
+
+  &__card{
+    border-bottom: black 2px solid !important;
+    width: 50% !important;
+  }
 }
 
 .text-content{
   text-align: justify;
   padding: 20px;
   line-height: 1.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .text-content{
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5em;
+  }
 }

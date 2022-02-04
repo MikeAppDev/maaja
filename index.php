@@ -86,7 +86,7 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 
         <div class="titre">
             <div class="center">
-                <img class="logo_maaja" src="./assets/maaja_logo.png" alt="">
+                <img class="logo_maaja" src="./assets/maaja_logo_v2.png" alt="">
             </div>
         </div>
 
@@ -96,9 +96,9 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
         </div>
         <div class="center">
             <div class="sociaux">
-                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/maaja.deco/?hl=fr"><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.facebook.com/maaja.deco/"><i class="fab fa-facebook-square"></i></a>
             </div>
         </div>
 
@@ -121,16 +121,18 @@ Marion Bezghiche  / Décoratrice d’Intérieur
             </div>
                 
                 <img class="imagepresentation" src="assets/Profil_MAAJA.jpg" alt="">
-            </div>
-            <div class="pres2">
-                <img class="imagepresentation" src="assets/Decoration_MAAJA.jpg" alt="">
                 <p class="text-content">Sublimer vos boutiques fait aussi parti de mon quotidien. 
 Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque vitrine pour vous proposer des univers différents tout au long de l’année. 
                 </p>
             </div>
+            
+            <div class="pres2">
+                <img class="imagepresentation" src="assets/Decoration_MAAJA.jpg" alt="">
+
+            </div>
         </div>
     </section>
-
+    <!-- SLIDERS -->
     <section class="sliders">
         <div class="center bot sliders__titreP">
             <h2 class="title2">REALISATION</h2>
@@ -162,7 +164,7 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
     <section id="tarif" class="prestation">
     <div class="prestation__titreP"><h2 id="presentation" class="title2">PRESTATIONS</h2></div>
         <div class="prestationCard">
-            <!-- CARD -->
+            <!-- CARD COACHING-->
             <div class="containerCard">
                 <div class="card">
                     <div class="card-front prestaCoaching">
@@ -210,96 +212,108 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
                     </div>
                 </div>
             </div>
-            <!-- CARD -->
+            <!-- CARD PROJET-->
             <div class="containerCard">
                 <div class="card">
                     <div class="card-front prestaProjet">
-                        <!-- <div><img src="assets/front-presta1.png" alt=""></div> -->
                         <div class="backTitle"><h4    class="titleCard">PROJET</h4></div>
-                        <!-- <div ><h4 class="titleCard ita blanc">75€</h4></div> -->
-                        <!-- <div><p class="detailTitleCard">A partir de</p></div> -->
                     </div>
                     <div class="card-back">
-                        <h3>COACHING DECO</h3>
+                        <h3>PROJET DECO</h3>
                         <div class="prestaPrix">
-                            <div>
+                            <div class="">
+                                <h4 class="prestaPrix__title">1 PIECE SIMPLE</h4>
+                                <p>(salon - chambre - bureau - entrée...)</p>
+                            </div>
+                            <div class="prestaPrix__descriptif">
                                 <p>A DISTANCE</p>
-                                <p>A PARTIR DE PHOTOS ET/OU VIDEOS</p>
+                                <h4 class="titleCard ita titleCard__price">145€</h4>
                             </div>
-                            <div>
-                                <h4 class="titleCard ita">75€</h4>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DOMICILE</p>
+                                <h4 class="titleCard ita titleCard__price">215€</h4>
                             </div>
                         </div>
+                        <div class="separator separator__card"></div>
                         <div class="prestaPrix">
-                            <div>
-                                <div><p>A DOMICILE</p></div>
-                                <div><p>ENVIRON 1H30 A 2H DE RDV</p></div>
+                            <div class="">
+                                <h4 class="prestaPrix__title">1 PIECE TECHNIQUE</h4>
+                                <p>(salle de bain - cuisine)</p>
                             </div>
-                            <div>
-                                <h4 class="titleCard ita">135€</h4>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DISTANCE</p>
+                                <h4 class="titleCard ita titleCard__price">165€</h4>
                             </div>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="detailBackCard">
-                            <div>
-                            <ul type="disc">
-                                <li>PROPOSITION D'AMENAGEMENT, OPTIMISATION DES ESPACES</li>
-                                <li>CONSEIL COULEUR & MATERIAUX</li>
-                                <li>CONSEIL AMBIANCE, DECO & MOBILIER</li>
-                                <li>ASTUCES DECO & DIY (DO IT YOURQILF)</li>
-                                <li>CONSEIL SUR LE RELOOKING DE VOS MEUBLES</li>
-                            </ul>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DOMICILE</p>
+                                <h4 class="titleCard ita titleCard__price">245€</h4>
                             </div>
                         </div>
+                        <div class="separator separator__card"></div>
+                        <div class="prestaPrix">
+                            <div class="">
+                                <h4 class="prestaPrix__title">1 PIECE MULTIFONCTION</h4>
+                                <p>(suite parentale - pièce ouverte)</p>
+                            </div>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DISTANCE</p>
+                                <h4 class="titleCard ita titleCard__price">245€</h4>
+                            </div>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DOMICILE</p>
+                                <h4 class="titleCard ita titleCard__price">425€</h4>
+                            </div>
+                        </div>
+                        
                         <div class="">
                             <a class="btn-contact-card" href="#contact">Me Contacter</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARD ATELIER-->
             <div class="containerCard">
                 <div class="card">
                     <div class="card-front prestaAtelier">
-                        <!-- <div><img src="assets/front-presta1.png" alt=""></div> -->
                         <div class="backTitle"><h4    class="titleCard">ATELIER</h4></div>
-                        <!-- <div ><h4 class="titleCard ita blanc">75€</h4></div> -->
-                        <!-- <div><p class="detailTitleCard">A partir de</p></div> -->
                     </div>
                     <div class="card-back">
-                        <h3>COACHING DECO</h3>
+                        <h3>ATELIER DECO</h3>
                         <div class="prestaPrix">
-                            <div>
-                                <p>A DISTANCE</p>
-                                <p>A PARTIR DE PHOTOS ET/OU VIDEOS</p>
+                            <div class="">
+                                <h4 class="prestaPrix__title">1 personne</h4>
                             </div>
-                            <div>
-                                <h4 class="titleCard ita">75€</h4>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DOMICILE</p>
+                                <h4 class="titleCard ita titleCard__price">80€</h4>
                             </div>
                         </div>
+                        <div class="separator separator__card"></div>
                         <div class="prestaPrix">
-                            <div>
-                                <div><p>A DOMICILE</p></div>
-                                <div><p>ENVIRON 1H30 A 2H DE RDV</p></div>
+                            <div class="">
+                                <h4 class="prestaPrix__title">2 personne</h4>
                             </div>
-                            <div>
-                                <h4 class="titleCard ita">135€</h4>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DOMICILE</p>
+                                <h4 class="titleCard ita titleCard__price">140€</h4>
                             </div>
+                            <div><p>70€ / pers</p></div>
                         </div>
-                        <div class="separator"></div>
-                        <div class="detailBackCard">
-                            <div>
-                            <ul type="disc">
-                                <li>PROPOSITION D'AMENAGEMENT, OPTIMISATION DES ESPACES</li>
-                                <li>CONSEIL COULEUR & MATERIAUX</li>
-                                <li>CONSEIL AMBIANCE, DECO & MOBILIER</li>
-                                <li>ASTUCES DECO & DIY (DO IT YOURQILF)</li>
-                                <li>CONSEIL SUR LE RELOOKING DE VOS MEUBLES</li>
-                            </ul>
+                        <div class="separator separator__card"></div>
+                        <div class="prestaPrix">
+                            <div class="">
+                                <h4 class="prestaPrix__title">4 personne</h4>
                             </div>
+                            <div class="prestaPrix__descriptif">
+                                <p>A DOMICILE</p>
+                                <h4 class="titleCard ita titleCard__price">260€</h4>
+                            </div>
+                            <div><p>70€ / pers</p><p>50€ pour l'hôte</p></div>
                         </div>
                         <div class="">
                             <a class="btn-contact-card" href="#contact">Me Contacter</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -308,18 +322,18 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
 
     <section class="Pro">
         <div class="content">
-        <div class="prestation__titreP"><h2 id="presentation" class="title2">PROFESSIONNELS</h2></div>
+        <div class="prof__titreP"><h2 id="presentation" class="title2">PROFESSIONNELS</h2></div>
             <div class="content__dispo">
                 <div class="content__text">
-                    <p>Sublimer vos boutiques fait aussi parti de mon quotidien. Cette partie de mon travail me permet d'imaginer, créer et fabriquer chaque vitrine pour vous proposer des univers différents et parsonnalisés tout au long de l'année.</p>
+                    <p>Sublimer vos boutiques fait aussi parti de mon quotidien. Cette partie de mon travail me permet d'imaginer, créer et fabriquer chaque vitrine pour vous proposer des univers différents et personnalisés tout au long de l'année. cliquez sur les brochures pour les télécharger.</p>
                 </div>
                 <div class="content__img">
                     <div class="content__img__1">
-                        <a href="./assets/maaja-prestation-vitrine-de-commerce-tarn-et-garone.pdf"><img class="content__img__1__detail" src="./assets/Profil_MAAJA.png" alt=""></a>
+                        <a href="./assets/maaja-prestation-vitrine-de-commerce-tarn-et-garonne.pdf" target="_blank"><img class="content__img__1__detail" src="./assets/maaja-sublimer-votre-boutique-tarn-et-garonne-miniature-profesionnel.png" alt=""></a>
                         
                     </div>
                     <div class="content__img__1">
-                    <a href="./assets/maaja-prestation-agence-immobiliere-tarn-et-garone.pdf"><img class="content__img__1__detail" src="./assets/Profil_MAAJA.png" alt=""></a>
+                    <a href="./assets/maaja-prestation-agence-immobiliere-tarn-et-garonne.pdf" target="_blank"><img class="content__img__1__detail" src="./assets/maaja-home-staging-tarn-et-garonne-miniature-profesionnel.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -418,18 +432,22 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
     </section>
 
 <footer class="footer">
-  <div class="footer__addr">
-    <h4 class="footer__logo">Maaja</h4>
+
+<div class="footer__content">
+    <div class="">
+        <img class="footer__logo" src="./assets/logo-maaja-marion-decoratrice-interieur.png" alt="logo maaja décoratrice d'intérieur tarn et garone">
+    </div>
+    <div class="footer__content__text">
+        <div><h4 class="footer__titre">MAAJA ©</h4></div>
+        <div><p class="footer__sousTitre">Décoratrice d'intérieur</p></div>
         
-    <h4>Contact</h4>
-    
-    <address>
-    2 Rue Edouard Herriot 82100 Castelsarrasin <br>
-          
-      <a class="footer__btn" href="mailto:maaja@gmail.com">Ecrivez-nous</a>
-    </address>
-  </div>
-  
+    </div>
+    <div class="footer__content__reseau">
+        <a href="https://www.instagram.com/maaja.deco/?hl=fr"><i class="fab fa-instagram footer__instafoot"></i></a>
+    </div>
+</div>
+
+
 
 </footer>
 

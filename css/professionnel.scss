@@ -3,6 +3,25 @@
     display: flex;
     justify-content: center;
 }
+.prof{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    &__titreP{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32%;
+      border-top: solid 1px brown;
+      border-bottom: solid 1px brown;
+      margin-bottom: 40px;
+  }
+}
 
 .content{
     display: flex;
@@ -25,7 +44,7 @@
         width: 40%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         &__1{
@@ -58,11 +77,20 @@
             flex-wrap: nowrap;
         }
     }
+    .prof{
+        &__titreP{
+            margin-bottom: 20px;
+        }
+    }
 }
 @media only screen and (max-width: 430px) {
     .content{
         &__img{
             flex-wrap: wrap;
+        }
+        &__text{
+            width : 80%;
+            padding: 10px;
         }
     }
 }
