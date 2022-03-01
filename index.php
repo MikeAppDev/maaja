@@ -45,10 +45,10 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     <p><b>Demande : </b>' . htmlspecialchars($_POST['commentaire']) . '</p>';
 
     $retour = mail('marion@maaja.fr', 'MAAJA.FR', $message, $entete);
-
+//
     
 
-// $cool = "<p class=''> $_POST[prenom] $_POST[nom] ! Votre demande est bien envoyée ! </p>";
+$cool = "<div class='center'><p class='center fond'> $_POST[prenom] $_POST[nom] ! Votre demande est bien envoyée ! </p></div>";
     }
 
 }
@@ -424,11 +424,11 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
                                     <label for="presta_3">Atelier</label>
                                 </div>
                                 <div class="contentPosition__pad">
-                                    <input type="checkbox" id="presta_4" name="presta_4" value="Atelier">
+                                    <input type="checkbox" id="presta_4" name="presta_4" value="Vitrine">
                                     <label for="presta_3">Vitrine</label>
                                 </div>
                                 <div class="contentPosition__pad">
-                                    <input type="checkbox" id="presta_5" name="presta_5" value="Atelier">
+                                    <input type="checkbox" id="presta_5" name="presta_5" value="Home Staging">
                                     <label for="presta_3">Home Staging</label>
                                 </div>
                             </div>

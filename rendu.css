@@ -646,6 +646,14 @@ fieldset {
     margin-bottom: 15px;
   }
 }
+.fond {
+  background-color: #cbe0b6;
+  border-radius: 30px;
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+}
+
 .footer {
   display: flex;
   width: 100%;
