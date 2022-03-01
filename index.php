@@ -32,7 +32,7 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
     $entete .= 'From: ' . $_POST['email'] . "\r\n";
 
-    $message = '<h1>Message envoyé depuis Maaja.com</h1>
+    $message = '<h1>Message envoyé depuis Maaja.fr</h1>
     <p><b>Nom : </b>' . $_POST['nom'] . '<br>
     <b>Prénom : </b>' . $_POST['prenom'] . '<br>
     <p><b>Téléphone : </b>' . $_POST['tel'] . '<br>
@@ -40,9 +40,11 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     <p><b>Presta : </b>' . $_POST['presta_1'] . '<br>
     <b>Presta : </b>' . $_POST['presta_2'] . '<br>
     <b>Presta : </b>' . $_POST['presta_3'] . '<br>
+    <b>Presta : </b>' . $_POST['presta_4'] . '<br>
+    <b>Presta : </b>' . $_POST['presta_5'] . '<br>
     <p><b>Demande : </b>' . htmlspecialchars($_POST['commentaire']) . '</p>';
 
-    $retour = mail('michael.sarrazin.ms@gmail.com', 'MAAJA.COM', $message, $entete);
+    $retour = mail('marion@maaja.fr', 'MAAJA.FR', $message, $entete);
 
     
 
@@ -59,16 +61,17 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Lien description google metadonné -->
+    <meta name="description" content="Maaja décoratrice d’intérieur vous accompagne dans vos projets d'aménagement dans le Tarn et Garonne mais aussi dans toute la France. Mon rôle est de vous accompagner pour vous sentir chez vous.">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
 
 
-
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon-maaja-decoratrice-d-interieur.png">
     <link rel="stylesheet" href="rendu.css">
-    <title>Maaja - décoratrice d'intérieur</title>
+    <title>Maaja - Décoratrice d'Intérieur - Tarn et Garonne</title>
 </head>
 <body>
     <!-- first -->
@@ -86,13 +89,11 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 
         <div class="titre">
             <div class="center">
-                <img class="logo_maaja" src="./assets/maaja_logo_v2.png" alt="">
+                <img class="logo_maaja" src="./assets/maaja_logo_v2.png" alt="logo maaja décoratrice d'intérieur tarn et garonne">
             </div>
         </div>
 
         <div class="center">
-            <!-- <button class="myButton"><a href="#contact"> Me contacter</button></a> -->
-            <!-- <a class="btn-origin marginB" href="#contact">Me Contacter</a> -->
         </div>
         <div class="center">
             <div class="sociaux">
@@ -113,22 +114,29 @@ elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
             <div class="pres1">
                 
                 <div class="text-content">
-                <p>Vous sentir bien chez vous c’est l’objet de mon intervention. 
-Votre style sera mon style, mon travail est de faire en sorte que vos goûts et vos besoins s’harmonisent pour créer un espace qui vous ressemble. 
-Je vous accompagne dans vos projets sur tout le Tarn et Garonne, et grâce à mes prestations à distance c’est dans toute la France que j’interviens ! 
-Marion Bezghiche  / Décoratrice d’Intérieur
-                </p>
+                    <div class="espacement">
+                        <p class="text">Maaja décoratrice d’intérieur vous accompagne dans vos projets d'aménagement dans le Tarn et Garonne mais aussi dans toute la France.
+                        </p>
+                    </div>
+                    <div class="espacement">
+                        <p class="text">
+                        Tout le monde rêve d'un chez soi qui lui ressemble , où l'on s'y sent bien , un « Chez nous » ! Selon nos goûts et nos besoins ! Mon rôle est de vous accompagner pour vous sentir chez vous.
+                        </p>
+                    </div>
+                    <div class="espacement">
+                        <p class="text">
+                        Je ferai de votre appartement, maison un cocon où il fait bon vivre , un espace de vie lumineux, aéré, coloré ou plus sobre selon vos critères.
+                        </p>
+                    </div>
             </div>
-                
-                <img class="imagepresentation" src="assets/Profil_MAAJA.jpg" alt="">
-                <p class="text-content">Sublimer vos boutiques fait aussi parti de mon quotidien. 
-Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque vitrine pour vous proposer des univers différents tout au long de l’année. 
-                </p>
+                <img class="imagepresentation" src="assets/Profil_MAAJA.webp" alt="Maaja décoratrice d'intérieur tarn et garonne photo de marion bezghiche de profil sur fond blanc">
             </div>
             
             <div class="pres2">
-                <img class="imagepresentation" src="assets/Decoration_MAAJA.jpg" alt="">
-
+                <img class="imagepresentation" src="assets/Decoration_MAAJA.jpg" alt="Maaja décoratrice d'intérieur tarn et garonne plance dedécoration sur tabouret sur fond blanc">
+                <p class="text-content text">
+                Je vous propose de valoriser vos espaces et leurs volumes, d’harmoniser teintes et matériaux, de retravailler la lumière, de repenser/changer la disposition de vos meubles afin de mettre en place une décoration qui vous ressemble . 
+                </p>
             </div>
         </div>
     </section>
@@ -140,7 +148,7 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
             <div class="buttonDir">
                 <div><a id="btn0" class="btn-origin">Salon</a></div>
                 <div><a id="btn1" class="menuTarif">Bureau</a></div>
-                <div><a id="btn2" class="menu">Terasse</a></div>
+                <div><a id="btn2" class="menu">Terrasse</a></div>
                 <div><a id="btn4" class="menuTarif">Salle de bain</a></div>
             </div>
         
@@ -168,10 +176,7 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
             <div class="containerCard">
                 <div class="card">
                     <div class="card-front prestaCoaching">
-                        <!-- <div><img src="assets/front-presta1.png" alt=""></div> -->
                         <div class="backTitle"><h4    class="titleCard">COACHING</h4></div>
-                        <!-- <div ><h4 class="titleCard ita blanc">75€</h4></div>
-                        <div><p class="detailTitleCard">A partir de</p></div> -->
                     </div>
                     <div class="card-back">
                         <div><h3 class="titleBack">COACHING DECO</h3></div>
@@ -324,16 +329,31 @@ Cette partie de mon travail me permet d’imaginer, créer et fabriquer chaque v
         <div class="content">
         <div class="prof__titreP"><h2 id="presentation" class="title2">PROFESSIONNELS</h2></div>
             <div class="content__dispo">
-                <div class="content__text">
-                    <p>Sublimer vos boutiques fait aussi parti de mon quotidien. Cette partie de mon travail me permet d'imaginer, créer et fabriquer chaque vitrine pour vous proposer des univers différents et personnalisés tout au long de l'année. cliquez sur les brochures pour les télécharger.</p>
+                <div class="content__text text">
+                    <div class="espacement">
+                        <p>
+                            Une vitrine bien présentée, décorée avec goût attire toujours plus le regard de votre future clientèle. Je vous propose de l'imaginer, de la créer, de la fabriquer et ce au gré des saisons. Toute l’année!
+                        </p>
+                    </div>
+                    <div class="espacement">
+                        <p class="text__gras">
+                            Un gain de temps pour exercer votre activité.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text__gras">
+                            Consultez nos offres !
+                        </p>
+                    </div>
+                    
                 </div>
                 <div class="content__img">
                     <div class="content__img__1">
-                        <a href="./assets/maaja-prestation-vitrine-de-commerce-tarn-et-garonne.pdf" target="_blank"><img class="content__img__1__detail" src="./assets/maaja-sublimer-votre-boutique-tarn-et-garonne-miniature-profesionnel.png" alt=""></a>
+                        <a href="./assets/maaja-prestation-vitrine-de-commerce-tarn-et-garonne.pdf" target="_blank"><img class="content__img__1__detail" src="./assets/maaja-sublimer-votre-boutique-tarn-et-garonne-miniature-profesionnel.png" alt="Maaja décoratrice d'intérieur tarn et garonne prestation vitrine pour les commercants"></a>
                         
                     </div>
                     <div class="content__img__1">
-                    <a href="./assets/maaja-prestation-agence-immobiliere-tarn-et-garonne.pdf" target="_blank"><img class="content__img__1__detail" src="./assets/maaja-home-staging-tarn-et-garonne-miniature-profesionnel.png" alt=""></a>
+                    <a href="./assets/maaja-prestation-agence-immobiliere-tarn-et-garonne.pdf" target="_blank"><img class="content__img__1__detail" src="./assets/maaja-home-staging-tarn-et-garonne-miniature-profesionnel.png" alt="Maaja décoratrice d'intérieur tarn et garonne prestation agence immobilière"></a>
                     </div>
                 </div>
             </div>
