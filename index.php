@@ -72,6 +72,14 @@ $cool = "<div class='center'><p class='center fond'> $_POST[prenom] $_POST[nom] 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon-maaja-decoratrice-d-interieur.png">
     <link rel="stylesheet" href="rendu.css">
     <title>Maaja - Décoratrice d'Intérieur - Tarn et Garonne</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221933029-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-221933029-1');
+    </script>
 </head>
 <body>
     <!-- first -->
@@ -98,7 +106,7 @@ $cool = "<div class='center'><p class='center fond'> $_POST[prenom] $_POST[nom] 
         <div class="center">
             <div class="sociaux">
                     <a href="https://www.instagram.com/maaja.deco/?hl=fr"><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
                     <a href="https://www.facebook.com/maaja.deco/"><i class="fab fa-facebook-square"></i></a>
             </div>
         </div>
