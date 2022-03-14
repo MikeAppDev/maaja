@@ -247,6 +247,11 @@ body {
   margin-bottom: 10px;
   border-radius: 30px;
 }
+@media only screen and (min-width: 768px) {
+  .containerCard {
+    margin-right: 60px;
+  }
+}
 
 .card-front {
   width: 210px;
@@ -267,6 +272,11 @@ body {
   align-items: center;
   box-shadow: 10px 5px 5px #b1b1b1;
   cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .card-front {
+    width: 280px;
+  }
 }
 
 .prestaCoaching {
@@ -323,9 +333,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 768px) {
+  .prestaPrix__descriptif {
+    font-size: 11px;
+  }
+}
 .prestaPrix__title {
   font-size: small;
   font-weight: 900;
+}
+@media only screen and (min-width: 768px) {
+  .prestaPrix__title {
+    font-size: 15px;
+  }
 }
 
 .card-back {
@@ -353,6 +373,11 @@ body {
   box-shadow: 10px 5px 5px #b1b1b1;
   padding: 10px;
 }
+@media only screen and (min-width: 768px) {
+  .card-back {
+    width: 280px;
+  }
+}
 
 .card:hover .card-front {
   -moz-transform: rotateY(180deg);
@@ -372,7 +397,7 @@ body {
 .detailBackCard {
   text-align: unset;
   padding-left: 20px;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .titleBack {
@@ -699,6 +724,11 @@ fieldset {
     padding-right: 5px;
   }
 }
+.bf {
+  padding: 5px;
+  font-size: 15px;
+}
+
 .menu {
   border-bottom: black 2px solid;
   padding: 10px 10px 10px 10px;
