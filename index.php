@@ -466,15 +466,15 @@ $cool = "<div class='center'><p class='center fond'> $_POST[prenom] $_POST[nom] 
         <div>
             <img class="footer__logo" src="./assets/logo-maaja-marion-decoratrice-interieur.png" alt="logo maaja décoratrice d'intérieur tarn et garone">
         </div>
-        <div class="center bf">
-            <a href="https://sitevitrine.battlefast.com/">Develop by Battle Web</a>
-        </div>
+        
         
     </div>
     <div class="footer__content__text">
         <div><h4 class="footer__titre">MAAJA ©</h4></div>
         <div><p class="footer__sousTitre">Décoratrice d'intérieur</p></div>
-        
+        <div class="center bf">
+            <a href="https://sitevitrine.battlefast.com/">Develop by Battle Web</a>
+        </div>  
     </div>
     <div class="footer__content__reseau">
         <a href="https://www.instagram.com/maaja.deco/?hl=fr"><i class="fab fa-instagram footer__instafoot"></i></a>
