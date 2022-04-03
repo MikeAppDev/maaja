@@ -473,7 +473,7 @@ $cool = "<div class='center'><p class='center fond'> $_POST[prenom] $_POST[nom] 
         <div><h4 class="footer__titre">MAAJA ©</h4></div>
         <div><p class="footer__sousTitre">Décoratrice d'intérieur</p></div>
         <div class="center bf">
-            <a href="https://sitevitrine.battlefast.com/">Develop by Battle Web</a>
+            <a href="https://site.battlefast.com/">Develop by Battle Web</a>
         </div>  
     </div>
     <div class="footer__content__reseau">
